@@ -1,0 +1,2 @@
+scoreboard objectives remove sleep_timer
+scoreboard objectives remove kick_sleeping
