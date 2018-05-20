@@ -9,4 +9,5 @@ execute if entity @a[tag=is_sleeping, scores={sleep_timer=120..}] run weather th
 execute as @a[scores={kick_sleeping=1}] run function 1_player_sleep:kick
 
 tag @a[tag=is_sleeping, nbt={Sleeping: false}] remove is_sleeping
+execute if entity @a[tag=!is_sleeping, scores={sleep_timer=1..}] run scoreboard players reset @a kick_sleeping
 scoreboard players set @a[tag=!is_sleeping, scores={sleep_timer=1..}] sleep_timer 0
